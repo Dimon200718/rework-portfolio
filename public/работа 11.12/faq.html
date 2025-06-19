@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        padding: 0;
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --main-headline-color: #292F36;
+        --main-headline-font: "DM Serif Display";
+        --main-text-font: 'Jost';
+        --main-text-gray-color: #4D5053;
+    }
+
+    .box{
+        width: 100%;
+        height: 2100px;
+    }
+
+
+    /* nav */
+    nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav_container_links{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav_links{
+        text-decoration: none;
+        color: #292F36;
+        font-family: 'Jost';
+        font-size: 17px;
+    }
+    .nav_logo{
+        width: 10%;
+    }
+    .nav__seacrh{
+        height: 100%;
+        width: 50px;
+    }
+    .nav__seacrh_img{
+        height: 30px;
+    }
+
+
+    /* header */
+    header{
+        width: 100%;
+        height: 310px;
+        border: 1px solid;
+    }
+    .header__background{
+        width: 100%;
+        height: 305px;
+        background: url(img/header__img.jpg);
+        background-size: 100% 100%;
+    }
+
+
+    /* main */
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .main__every_questions{
+        display: flex;
+        width: 72%;
+        height: 750px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .every_questions__block{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .every_questions__img{
+        width: 47%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .every_questions__img img{
+        width: 100%;
+        height: 85%;
+        border-radius: 30px;
+    }
+    .questions_block__question{
+        border-bottom: 2px solid #CDA274;
+        min-height: 15%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .questions_block__question h2{
+        color: var(--main-headline-color);
+        font-family: var(--main-headline-font);
+        font-weight: 400;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: .3s;
+    }
+    .questions_block__question p {
+        color: #4D5053;
+        line-height: 25px;
+        font-size: 18px;
+        font-family: var(--main-text-font);
+        height: 0;
+        display: none;
+        transition: .5s;
+    }
+
+
+    /* footer */
+    footer{
+    width: 62.5%;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
+    .footerinf{
+        width: 27%;
+        height: 190px;
+    }
+    .footermid{
+        width: 15%;
+        height: 370px;
+    }
+    .footercontact{
+        width: 23%;
+        height: 270px;
+    }
+    .footerinf img{
+        margin-bottom: 10px;
+    }
+    .footerinf_container{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        height: 25px;
+        margin-top: 20px;
+    }
+    .footerinf_container img{
+        width: 17px;
+        cursor: pointer;
+    }
+    .footerheadline{
+        font-size: 25px;
+        font-family: "DM Serif Display";
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .footeritem{
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 300%;
+        cursor: pointer;
+        font-family: var(--main-text-font);
+        color: var(--main-text-gray-color);
+    }
+    .footer__item{
+        color: var(--main-text-gray-color);
+        font-family: var(--main-text-font);
+        font-size: 18px;
+    }
+    .footerinf p{
+        font-size: 19px;
+        font-family: var(--main-text-font);
+        color: var(--main-text-gray-color);
+    }
+    .footertxt{
+        font-size: 22px;
+        font-family: var(--main-text-font);
+        color: var(--main-text-gray-color);
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .copyright{
+        width: 100%;
+        height: 80px;
+        margin: 70px auto 0 auto;
+        color: var(--main-text-gray-color);
+        font-family: var(--main-text-font);
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid rgba(170, 169, 169, 0.247);
+    }
+</style>
+<body>
+    <div class="box">
+        <head>
+            <nav>
+                <img class="nav_logo" src="img/Logo.png" alt="" srcset="">
+                <div class="nav_container_links">
+                   <a class="nav_links" href="mainpage.html">Home</a>
+                   <a class="nav_links" href="about.html">about</a>
+                   <a class="nav_links" href="service.html">Services</a>
+                   <a class="nav_links" href="faq.html">Faq</a>
+                   <a class="nav_links" href=""><img src="img/icons8-лупа-50.png" alt=""></a>
+                </div>
+            </nav>
+            <div class="header__background">
+            </div>
+        </head>
+        <main>
+            <!-- Every Question Answered -->
+            <h1 style="font-family: 'DM Serif Display'; font-size: 45px; font-weight: 300; color: var(--main-headline-color); margin: 0 0 5% 0;">Every Question Answered</h1>
+            <div class="main__every_questions">
+                <div class="every_questions__block">
+                    <div class="questions_block__question questions_button">
+                        <h2>What is the Hipcouch Interior Design Service? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>So, how exactly does this work? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>What cities do you currently operate in? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>Hipcouch Interior Design Service? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>What kind of interior designers do you have? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                </div>
+                <div class="every_questions__img">
+                    <img src="img/main_questions_img.jpg" alt="" class="">
+                </div>
+            </div>
+
+            <!-- Project related questions -->
+            <h1 style="font-family: 'DM Serif Display'; font-size: 45px; font-weight: 300; color: var(--main-headline-color); margin: 0 0 5% 0;">Project related questions</h1>
+            <div class="main__every_questions">
+                <div class="every_questions__img">
+                    <img src="img/main__project_img.jpg" alt="" class="">
+                </div>
+                <div class="every_questions__block">
+                    <div class="questions_block__question questions_button">
+                        <h2>How long does it take? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>Can I use my existing furnishings? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>I put into redesigning my interior? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>What do your services cost? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                    <div class="questions_block__question questions_button">
+                        <h2>Do you offer free consultations? <span class="qs_block__h2_span">&#10095;</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus odit aspernatur dicta sed laborum ipsum doloribus ea nemo ratione commodi et earum modi, magnam quod ducimus, itaque quas ut?</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerinf">
+                <img src="img/Logo.png" alt="" class="footer_img">
+                <p>It is a long established fact that a reader will be distracted lookings.</p>
+                <div class="footerinf_container">
+                    <img src="img/face.png" alt="" style="width: 13px;" class="footeritem">
+                    <img src="img/tw.png" alt="" class="footeritem">
+                    <img src="img/in.png" alt="" class="footeritem">
+                    <img src="img/inst.png" alt="" class="footeritem">
+                </div>
+            </div>
+            <div class="footermid">
+                <p class="footerheadline">Pages</p>
+                <div class="footeritem">About Us</div>
+                <div class="footeritem">Our Projects</div>
+                <div class="footeritem">Our Team</div>
+                <div class="footeritem">Contact Us</div>
+                <div class="footeritem">Services</div>
+            </div>
+            <div class="footermid">
+                <p class="footerheadline">Services</p>
+                <div class="footeritem">Kitchan</div>
+                <div class="footeritem">Living <Area></Area></div>
+                <div class="footeritem">Bathroom</div>
+                <div class="footeritem">Dinning Hall</div>
+                <div class="footeritem">Bedroom</div>
+            </div>
+            <div class="footercontact">
+                <p class="footerheadline">Contact</p>
+                <div class="footertxt">55 East Birchwood Ave. Brooklyn, New York 11201</div>
+                <div class="footeritem">contact@interno.com</div>
+                <div class="footer__item">(123) 456 - 7890</div>
+            </div>
+        </footer>
+        <div class="copyright">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</div>
+    </div>
+
+
+    <script src="faq_slide_buttons.js"></script>
+</body>
+</html>

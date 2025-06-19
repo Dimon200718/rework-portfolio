@@ -1,0 +1,17 @@
+@use '../../scss/variables' as *;
+
+#tagcanvas{
+    width: 90%;
+    height: 500px;
+    margin: 0 auto; 
+}
+#taglist a{
+    text-decoration: none;
+    color: $cyan;
+    pointer-events: none;
+    font-size: 24px;
+}
+#taglist li{
+    font-size: 24px;
+    color: $cyan;
+}

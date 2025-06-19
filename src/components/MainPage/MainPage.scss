@@ -1,0 +1,421 @@
+@use '../../scss/variables' as *;
+
+.header{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+
+    &__box{
+        width: 96%;
+        margin: 15px auto;
+        // border: 2px solid greenyellow;
+    }
+    &__textbox{
+        margin-top: 5px;
+        margin-left: 2%;
+    }
+    &__image{
+        width: 90px;
+        height: 100px;
+      margin-right: 5px;
+    }
+    &__text{
+        color: #aba8a8;
+        font-size: 18px;
+        margin-top: 8px;
+        margin-left: 2%;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+        z-index: 3;
+        position: relative;
+    }
+}
+
+.bttext__h1{
+    margin-top: 40px;
+}
+
+.header_button{
+    width: 18%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(34, 238, 238);
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border: 1.4px solid rgb(34, 238, 238);
+    margin-top: 30px;
+    margin-left: 2%;
+    position: relative; 
+}
+.header__button_link{
+    text-decoration: none;
+    color: rgb(34, 238, 238);
+    position: relative;
+}
+.header_button:hover a{
+    color: #232323;
+    transition: 0.5s;
+    position: relative;
+}
+.header_button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: rgb(34, 238, 238);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+.header_button:hover::before{
+    transform: scaleX(1);
+}
+
+.my-works{
+    width: 96%;
+    margin: 100px auto;
+    position: relative;
+    z-index: 1;
+    &__textbox{
+        margin-top: 5px;
+        margin-left: 1%;
+    }
+    &__textbox .blast{
+        font-size: 72px;
+        color:$cyan ;
+    }
+    &__description{
+        margin-top: 5px;
+        width: 100%;
+        padding-left: 1%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            width: 44%;
+            font-size: 16px;
+            font-family: $main-font;
+            line-height: 22px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &__description .header_button{
+        margin: 0;
+    }
+    &__container{
+        margin-top: 70px;
+        width: 100%;
+
+        &_wraper{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 3%;
+            padding-right: 3%;
+            justify-content: space-between;
+            gap: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+//CARD
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+}
+
+.card__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 80%;
+  background-color: white;
+  padding: 2rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: 16px;
+  margin-bottom: .5rem;
+  color: #aba8a8;
+  font-family: $main-font;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  margin-bottom: .6rem;
+  font-family: $main-font;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color:  hsl(82, 60%, 28%);
+  font-family: $main-font;
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+.aboutme{
+  width: 96%;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  gap: 3%;
+  z-index: 1;
+  &__textbox{
+    margin-top: 5px;
+    margin-left: 1%;
+    width: 48%;
+  }
+  &__textbox .blast{
+    font-size: 68px;
+    color:$cyan ;
+  }
+  &__textbox .bgtext{
+    margin-left: -2%;
+  }
+  &__container{
+    width: 52%;
+  }
+  &__information{
+    font-size: 16px;
+    font-family: $main-font;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+  }
+}
+
+.experience{
+  width: 96%;
+  margin: 20px auto;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8%;
+
+  &__headline{
+    padding-left: 2%;
+
+    .blast{
+      font-size: 68px;
+      color:$cyan ;
+    }
+  }
+
+  &__textbox{
+    width: 46%;
+  }
+  &__diagram{
+    width: 54%;
+
+    .chart{
+      margin-bottom: 2rem;
+      span{
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-bottom: 7px;
+        font-weight: bold;
+        display: block;
+        color: white;
+      }
+      footer{
+        background-color: #373737;
+        height: 2px;
+        div{
+          height: 100%;
+          background-color: #08fdd8;
+          -webkit-transition: width 1.3s ease-out;
+          -o-transition: width 1.3s ease-out;
+          transition: width 1.3s ease-out;
+        }
+        div.html{
+          width: 95%;
+        }
+        div.css{
+          width: 85%;
+          background: rgb(255, 34, 83);
+        }
+        div.javascript{
+          width: 70%;
+          background-color: yellowgreen;
+
+        }
+        div.react{
+          width: 50%;
+          background-color: #fdd808;
+        }
+        div.wordpress{
+          width: 65%;
+          background-color: #086afd;
+        }
+        div.php{
+          width: 40%;
+          background-color: #cc08fd;
+        }
+        div.figma{
+          width: 90%;
+          background-color: #d3eb4b;
+        }
+        div.scss{
+          width: 80%;
+          background-color: #fd3908;
+        }
+      }
+    }
+    &_box{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item{
+      width: 48%;
+      background-color: #2a2a2a;
+      padding: 30px;
+    }
+    &_headline{
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+    &_text{
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      color: white;
+      span{
+        font-size:14px ;
+        font-family: $main-font-alt;
+        color: white;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+  &__skills{
+    margin-top: 10px;
+
+    &_textbox{
+      width: 100%;
+      padding-left:2%;
+
+    }
+    &_headline{
+      margin-top: 8px;
+      font-family: $main-font;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+    }
+    &_headline.mini{
+      font-size: 16px;
+    }
+    &_text{
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 22px;
+      color: white;
+    }
+    ul{
+      margin-top: 10px;
+      padding-left: 5%;
+    }
+    li{
+      font-size: 16px;
+      color: white;
+      line-height: 22px;
+    }
+  }
+}
