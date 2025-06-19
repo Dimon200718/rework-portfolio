@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS lesson</title>
+    <link rel="website icon" type="png" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-64.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body id="body">
+    <div class="box">
+        <header>
+            <nav>
+                <img onclick="change_theme()" class="nav_img" src="img/image 21.png" alt="">
+                <div class="nav_a_list">
+                    <a href="#history">History</a>
+                    <a href="#reasons">Reasons</a>
+                    <a href="#levels">Levels</a>
+                    <a href="#using">Using</a>
+                    <a href="#importance">Importance</a>
+                    <a href="#test">Testing</a>
+                    <a href="#tool">Tools</a>
+                </div>
+                <div class="buttons_container">
+                    <button class="login">Login</button>
+                    <button class="signup">Sign Up</button>
+                </div>
+            </nav>
+            <div class="header_text">
+                <h1>
+                    <span style="color: orange;">Studying</span> English is key quality for a developer
+                </h1>
+                <p>This web page outlines the main aspects of the English language and its importance in the life of developers</p>
+                <div class="header_text_podtext">
+                    <button style="color: white; font-weight: 700; background-color: #ffffff6b; width: 30%; font-size: 18px; height: 50px; border-radius: 30px;">Get Started</button>
+                    <img src="img/play_btn.png" alt="">
+                    <p style="width: 200px;">Watch Lessons!</p>
+                </div>
+            </div>
+            <div class="header_img">
+                <img src="img/Group 1097.png" alt="">
+            </div>
+        </header>
+        <main>
+            <section id="history" class="history">
+                <div class="pos__block1"></div>
+                <div class="pos__block2"></div>
+                <div class="pos__block3"></div>
+                <div class="pos__block4"></div>
+        
+                <div class="history__container">
+                    <p class="history__headline txt_lightblue">
+                        History origin and development of the English language 
+                    </p>
+                    <p class="history__text txt_white">
+                        The English language began with Germanic tribes, evolved through Old Norse and Norman French influences, and was enriched by Greek and Latin during the Renaissance. Today, it is a global lingua franca, constantly adapting with words from various cultures.
+                    </p>
+                    <p class="history__underline txt_white">Learn more</p>
+                </div>
+                <div class="history__img">
+                    
+                </div>
+            </section>
+            <section class="reasons" id="reasons">
+                <p class="reasons__headline txt_lightblue">Reasons to  <span>Learn English</span> </p>
+                <div class="reasons__container">
+                    <div class="reasons__item">
+                        <img src="img/image 19.png" alt="" class="reasons__img">
+                        <div class="reasons__block">First</div>
+                        <p class="reasons__item_headline txt_white">
+                            Impact Of Extrinsic Motivation On Intrinsic Move forward
+                        </p>
+                        <p class="reasons__text txt_white">
+                            Global Communication: English is the primary language of the tech industry, enabling you to collaborate with international teams and access a broader range of resources and communities.
+                        </p>
+                        <p style="margin-top: 30px;" class="history__underline txt_white">Learn more</p>
+                    </div>
+                    <div class="reasons__item">
+                        <img src="img/image 191.png" alt="" class="reasons__img">
+                        <div class="reasons__block">Second</div>
+                        <p class="reasons__item_headline txt_white">
+                            Impact Of Extrinsic Motivation On Intrinsic Move forward
+                        </p>
+                        <p class="reasons__text txt_white">
+                            Access to Documentation and Tools: Most programming documentation, tutorials, and tools are in English, providing easier and quicker access to the latest technologies and best practices.
+                        </p>
+                        <p style="margin-top: 30px;" class="history__underline txt_white">Learn more</p>
+                    </div>
+                    <div class="reasons__item">
+                        <img src="img/image 192.png" alt="" class="reasons__img">
+                        <div class="reasons__block">Third</div>
+                        <p class="reasons__item_headline txt_white">
+                            Impact Of Extrinsic Motivation On Intrinsic Move forward
+                        </p>
+                        <p class="reasons__text txt_white">
+                            Career Opportunities: Proficiency in English opens up more job opportunities and higher earning potential, as many top tech companies and startups require or prefer English-speaking employees.
+                        </p>
+                        <p style="margin-top: 30px;" class="history__underline txt_white">Learn more</p>
+                    </div>
+                    <div id="hidden_first"  class="reasons__item hidden">
+                        <img style="border-radius: 10px;" src="img/four.jpg" alt="" class="reasons__img">
+                        <div class="reasons__block">fourth</div>
+                        <p class="reasons__item_headline txt_white">
+                            Impact Of Extrinsic Motivation On Intrinsic Move forward
+                        </p>
+                        <p class="reasons__text txt_white">
+                            Networking: English allows you to connect with a vast global network of professionals, attend international conferences, and participate in online forums and meetups.
+                        </p>
+                        <p style="margin-top: 30px;" class="history__underline txt_white">Learn more</p>
+                    </div>
+                    <div id="hidden_second"  class="reasons__item hidden">
+                        <img style="border-radius: 10px;" src="img/five.jfif" alt="" class="reasons__img">
+                        <div class="reasons__block">fifth</div>
+                        <p class="reasons__item_headline txt_white">
+                            Impact Of Extrinsic Motivation On Intrinsic Move forward
+                        </p>
+                        <p class="reasons__text txt_white">
+                            Learning and Development: The majority of high-quality programming courses, webinars, and educational content are available in English, ensuring you can continuously improve your skills.
+                        </p>
+                        <p style="margin-top: 30px;" class="history__underline txt_white">Learn more</p>
+                    </div>
+                    <div id="hidden_third" class="reasons__item hidden">
+                        <img style="border-radius: 10px;" src="img/six.jfif" alt="" class="reasons__img">
+                        <div class="reasons__block">sixth</div>
+                        <p class="reasons__item_headline txt_white">
+                            Impact Of Extrinsic Motivation On Intrinsic Move forward
+                        </p>
+                        <p class="reasons__text txt_white">
+                            Latest Innovations: Many cutting-edge research papers, articles, and industry news are published in English first, keeping you informed about the latest trends and advancements in technology.
+                        </p>
+                        <p style="margin-top: 30px;" class="history__underline txt_white">Learn more</p>
+                    </div>
+                </div>
+                <div id="show_btn" onclick="show_blocks()" class="reasons__button">SHOW ALL</div>
+            </section>
+
+            <div class="lvls_eng" id="levels">
+                <h1 class="txt_lightblue">6 Levels of <span>English proficiency</span></h1>
+                <div class="lvls_cont">
+                    <div class="bl_a1 lvl_cont__bl">
+                        <img src="img/lvl a1.jpg" alt="">
+                        <p class="txt_white">Breakthrough or beginner</p>
+                    </div>
+                    <div class="bl_a2 lvl_cont__bl">
+                        <img src="img/lvl a2.png" alt="">
+                        <p class="txt_white">Breakthrough or beginner</p>
+                    </div>
+                    <div class="bl_b1 lvl_cont__bl">
+                        <img src="img/lvl b1.jpg" alt="">
+                        <p class="txt_white">Breakthrough or beginner</p>
+                    </div>
+                    <div class="bl_b2 lvl_cont__bl">
+                        <img src="img/lvl b2.png" alt="">
+                        <p class="txt_white">Breakthrough or beginner</p>
+                    </div>
+                    <div class="bl_c1 lvl_cont__bl">
+                        <img src="img/lvl c1.png" alt="">
+                        <p class="txt_white">Breakthrough or beginner</p>
+                    </div>
+                    <div class="bl_c2 lvl_cont__bl">
+                        <img src="img/lvl c2.png" alt="">
+                        <p class="txt_white">Breakthrough or beginner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="key_reasons" id="using">
+                <h1 class="txt_lightblue" style=" height: 10%;"><span>Key reasons</span> for the use of English language on the web</h1>
+                <p class="txt_white" style=" height: 10%; color: gray; width: 28%; margin: 0 auto; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+
+                <div class="reasons_cont">
+                    <div class="reason">
+                        <img src="img/Community.png" alt="">
+                        <h2 class="txt_white">Community</h2>
+                        <p class="txt_white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                        <a class="txt_white" href="">Learn more</a>
+                    </div>
+                    <div class="reason">
+                        <img src="img/Resources.png" alt="">
+                        <h2 class="txt_white">Documentation and Resources</h2>
+                        <p class="txt_white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                        <a class="txt_white" href="">Learn more</a>
+                    </div>
+                    <div class="reason">
+                        <img src="img/ISO.png" alt="">
+                        <h2 class="txt_white">International standard</h2>
+                        <p class="txt_white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                        <a class="txt_white" href="">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="importance" id="importance">
+                <img src="img/Group_1098.png" alt="" class="importance__image">
+                <p class="importance__headline txt_lightblue">
+                    The importance of the English language <span>for <br> professional development</span>
+                </p>
+                <div class="importance__container">
+                    <div class="importance__box">
+                        <div class="methods">
+                            <div class="plus__btn" onclick="metod1()">
+                                <div class="stick"></div>
+                                <div id="revstick" class="stick reversed__stick"></div>
+                            </div>
+                            <div id="metod_headline1" class="methods__headline txt_white">
+                                Latest Methods
+                            </div>
+                            <p id="method_text1" class="methods__text txt_white">
+
+                            </p>
+                        </div>
+                        <div class="methods">
+                            <div class="plus__btn" onclick="metod2()">
+                                <div class="stick"></div>
+                                <div id="revstick2" class="stick reversed__stick"></div>
+                            </div>
+                            <div id="metod_headline2" class="methods__headline txt_white">
+                                Latest Methods
+                            </div>
+                            <p id="method_text2" class="methods__text txt_white">
+
+                            </p>
+                        </div>
+                        <div class="methods">
+                            <div class="plus__btn" onclick="metod3()">
+                                <div class="stick"></div>
+                                <div id="revstick3" class="stick reversed__stick"></div>
+                            </div>
+                            <div id="metod_headline3" class="methods__headline txt_white">
+                                Latest Methods
+                            </div>
+                            <p id="method_text3" class="methods__text txt_white">
+
+                            </p>
+                        </div>
+                        <div class="methods">
+                            <div class="plus__btn" onclick="metod4()">
+                                <div class="stick"></div>
+                                <div id="revstick4" class="stick reversed__stick"></div>
+                            </div>
+                            <div id="metod_headline4" class="methods__headline txt_white">
+                                Latest Methods
+                            </div>
+                            <p id="method_text4" class="methods__text txt_white">
+
+                            </p>
+                        </div>
+                        <div class="methods">
+                            <div class="plus__btn" onclick="metod5()">
+                                <div class="stick"></div>
+                                <div id="revstick5" class="stick reversed__stick"></div>
+                            </div>
+                            <div id="metod_headline5" class="methods__headline txt_white">
+                                Latest Methods
+                            </div>
+                            <p id="method_text5" class="methods__text txt_white">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="test" class="test_knowlage">
+                <h1 class="txt_lightblue">Test your <span>knowledge</span> of the English language</h1>
+
+                <div class="test_btn_cont">
+                    <button id="test_btn_sel1" onclick="obj_quiz(), selection('test_btn_sel1')" class="test_btn selected">What is it?</button>
+                    <button id="test_btn_sel2" onclick="selection('test_btn_sel2'), translate1()" class="test_btn">Translate:  it!</button>
+                    <button id="test_btn_sel3" onclick="selection('test_btn_sel3'), listening()" class="test_btn">Listening test</button>
+                    <button id="test_btn_sel4" onclick="selection('test_btn_sel4'), reading()" class="test_btn">Reading</button>
+                </div>
+                <p class="txt_white" style="font-size: 18px; color: rgb(99, 99, 99);" id="knowlage_ps">Write under the image what is it object.</p>
+
+                <div id="ques_bl1" class="questions1_cont">
+                    <div class="question_bl1">
+                        <img src="https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-fresh-apple-fruit-red-png-image_10203073.png" alt="">
+                        <input id="input1" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://pngimg.com/d/refrigerator_PNG9057.png" alt="">
+                        <input id="input2" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://png.pngtree.com/png-clipart/20230201/original/pngtree-angry-cute-dog-sticker-png-image_8939715.png" alt="">
+                        <input id="input3" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/982/684/small/car-vehicles-transport-in-flat-style-png.png" alt="">
+                        <input id="input4" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/03/Cake-PNG-File-Cute-Clip-Art-Graphics-21158823-1-1-580x387.png" alt="">
+                        <input id="input5" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/374/084/small/character-of-man-standing-free-png.png" alt="">
+                        <input id="input6" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://pngfre.com/wp-content/uploads/orange-poster.png" alt="">
+                        <input id="input7" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt="">
+                        <input id="input8" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://freepngimg.com/thumb/keyboard/13-black-computer-keyboard-png-image-thumb.png" alt="">
+                        <input id="input9" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://static.vecteezy.com/system/resources/previews/021/013/967/original/chess-board-game-isolated-3d-render-free-png.png" alt="">
+                        <input id="input10" type="text">
+                    </div>
+                    <div class="question_bl1">
+                        <img src="https://i.pinimg.com/originals/ae/49/c5/ae49c5cfc1601ccf681d9857fa79aff3.png" alt="">
+                        <input id="input11" type="text">
+                    </div>
+                </div>
+                <div id="ques_bl2" style="display: none;" class="questions2_cont">
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Яблоко</span></p>
+                        <label>Translate: </label><input id="input12" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Человек</span></p>
+                        <label>Translate: </label><input id="input13" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Мир</span></p>
+                        <label>Translate: </label><input id="input14" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Работа</span></p>
+                        <label>Translate: </label><input id="input15" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Корова</span></p>
+                        <label>Translate: </label><input id="input16" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Холодильник</span></p>
+                        <label>Translate: </label><input id="input17" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Скорость</span></p>
+                        <label>Translate: </label><input id="input18" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Телевизор</span></p>
+                        <label>Translate: </label><input id="input19" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Художник</span></p>
+                        <label>Translate: </label><input id="input20" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Армия</span></p>
+                        <label>Translate: </label><input id="input21" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h3>Write in English</h3>
+                        <p>Word: <span>Солнце</span></p>
+                        <label>Translate: </label><input id="input22" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h2>Write in English</h2>
+                        <p>Word: <span>Вода</span></p>
+                        <label>Translate: </label><input id="input23" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h2>Write in English</h2>
+                        <p>Word: <span>Ножницы</span></p>
+                        <label>Translate: </label><input id="input24" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h2>Write in English</h2>
+                        <p>Word: <span>Книга</span></p>
+                        <label>Translate: </label><input id="input25" type="text">
+                    </div>
+                    <div class="question_bl2 bl_white">
+                        <h2>Write in English</h2>
+                        <p>Word: <span>Учитель</span></p>
+                        <label>Translate: </label><input id="input26" type="text">
+                    </div>
+                </div>
+
+                <div id="ques_bl3"  class="questions3_cont" style="display:none;">
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/nigga.mp3"></audio>
+                        <input type="text" id="input27">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/banana.mp3"></audio>
+                        <input type="text" id="input28">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/it.mp3"></audio>
+                        <input type="text" id="input29">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/channel.mp3"></audio>
+                        <input type="text" id="input30">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/pasta.mp3"></audio>
+                        <input type="text" id="input31">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/fringe.mp3"></audio>
+                        <input type="text" id="input32">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/jumper.mp3"></audio>
+                        <input type="text" id="input33">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/mobile.mp3"></audio>
+                        <input type="text" id="input34">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/garage.mp3"></audio>
+                        <input type="text" id="input35">
+                    </div>
+                    <div class="question_bl3 bl_white">
+                        <h2>Listen the fragment and write the word</h2>
+                        <audio controls src="audio/underground.mp3"></audio>
+                        <input type="text" id="input36">
+                    </div>
+                    
+                    
+                </div>
+                <div style="display: none;" id="ques_bl4"  class="questions4_cont" >
+                    <div class="question4__text bl_white">
+                        Social media has become an integral part of modern life, offering numerous benefits such as staying connected with friends and family, networking opportunities, and access to a wealth of information. However, its impact on mental health is a topic of increasing concern among researchers, healthcare professionals, and the general public. 
+
+                One of the primary issues associated with social media use is the comparison factor. People often compare their lives to the curated, seemingly perfect lives of others, leading to feelings of inadequacy and low self-esteem. This phenomenon, known as "social comparison," can contribute to anxiety and depression, particularly among adolescents and young adults.
+
+                Another significant concern is cyberbullying. Unlike traditional bullying, cyberbullying can occur 24/7 and reach a wide audience, making it more pervasive and difficult to escape. Victims of cyberbullying may experience severe emotional distress, anxiety, and even suicidal thoughts. 
+
+                Additionally, excessive social media use can lead to addiction. Social media platforms are designed to be engaging, often employing algorithms that encourage users to spend more time on them. This can result in reduced sleep quality, decreased physical activity, and neglected real-life relationships, all of which can negatively impact mental health. 
+
+                On the positive side, social media can also provide valuable support networks. Online communities can offer a sense of belonging and support for individuals dealing with specific issues, such as mental health conditions, chronic illnesses, or minority status. These communities can provide emotional support, information, and resources that might not be available offline. 
+                To mitigate the negative effects of social media on mental health, it is important to use it mindfully. Setting time limits, curating a positive feed, and taking regular breaks can help maintain a healthy balance. Additionally, fostering real-life connections and engaging in offline activities are crucial for overall well-being.
+                    </div>
+                    <div class="question__quest_box">
+                        <div class="question_bl4 bl_white">
+                        <h2>Task 1: What is a major issue with social media that affects self-esteem?</h2>
+                        <div class="ques4__cont">
+                            <div class="ques4__item">
+                                <p>Overuse.</p> <br>
+                                <input type="radio" name="task1" value="0" id="radio1">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Social comparison. </p> <br>
+                                <input type="radio" name="task1" value="1" id="radio2">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Posting frequently.</p> <br>
+                                <input type="radio" name="task1" value="0" id="radio3">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Following celebrities</p> <br>
+                                <input type="radio" name="task1" value="0" id="radio4">
+                            </div>
+                            
+                        </div>
+                        <h2>Task 2: How is cyberbullying different from traditional bullying?</h2>
+                        <div class="ques4__cont">
+                            <div class="ques4__item">
+                                <p>It's more frequent.</p> <br>
+                                <input type="radio" name="task2" value="0" id="radio5">
+                            </div>
+                            <div class="ques4__item">
+                                <p> It is harder to escape. </p> <br>
+                                <input type="radio" name="task2" value="1" id="radio6">
+                            </div>
+                            <div class="ques4__item">
+                                <p>It is physical.</p> <br>
+                                <input type="radio" name="task2" value="0" id="radio7">
+                            </div>
+                            <div class="ques4__item">
+                                <p>It involves strangers.</p> <br>
+                                <input type="radio" name="task2" value="0" id="radio8">
+                            </div>
+                        </div>
+                        <h2>Task 3: What can social media addiction negatively impact?</h2>
+                        <div class="ques4__cont">
+                            <div class="ques4__item">
+                                <p>Sleep and physical activity</p> <br>
+                                <input type="radio" name="task3" value="1" id="radio9">
+                            </div>
+                            <div class="ques4__item">
+                                <p> Diet. </p> <br>
+                                <input type="radio" name="task3" value="0" id="radio10">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Work productivity.</p> <br>
+                                <input type="radio" name="task3" value="0" id="radio11">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Memory.</p> <br>
+                                <input type="radio" name="task3" value="0" id="radio12">
+                            </div>
+                        </div>
+                        <h2>Task 4: How can social media be beneficial?</h2>
+                        <div class="ques4__cont">
+                            <div class="ques4__item">
+                                <p>By increasing follower count.</p> <br>
+                                <input type="radio" name="task4" value="0" id="radio13">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Sharing memes. </p> <br>
+                                <input type="radio" name="task4" value="0" id="radio14">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Providing support networks.</p> <br>
+                                <input type="radio" name="task4" value="1" id="radio15">
+                            </div>
+                            <div class="ques4__item">
+                                <p>Watching videos.</p> <br>
+                                <input type="radio" name="task4" value="0" id="radio16">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <button onclick="check_answers()" class="test_answer">Answer!</button>
+            </div>
+            <section id="tool" class="learning">
+                <p class="learning__headline txt_lightblue">
+                    Learning and <span>development</span> tools
+                </p>
+                <div class="learning__box">
+                    <img src="img/Group 40.png" alt="" class="learning__box_img">
+                    <div class="lerning__box_circle txt_white">Tool</div>
+                    <p class="learning__box_headline txt_white">
+                        Enhancing Skills with Cutting-Edge Learning and Development Tool
+                    </p>
+                    <p class="learning__text txt_white">
+                        Explore diverse learning and development tools designed to enhance skills, and improve productivity. Empower yourself with innovative resources.
+                    </p>
+                    <p class="readmore txt_white">Read more</p>
+                </div>
+                <div class="learning__box2">
+                    <div class="learn__box_item">
+                        <img src="img/Rectangle 33.png" alt="" class="learn__item_img">
+                        <div class="learning__item_block">
+                            <p class="learning__item_headline txt_white">
+                                Empowering Creative Learning and Enhancing Productivity
+                            </p>
+                            <p class="learning__text txt_white">Enhance your learning experience with our diverse range of tools designed to foster creativity and productivity. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learn__box_item">
+                        <img src="img/Group 42.png" alt="" class="learn__item_img">
+                        <div class="learning__item_block">
+                            <p class="learning__item_headline txt_white">
+                                Innovative Solutions for Effective Remote Education
+                            </p>
+                            <p class="learning__text txt_white">Stay ahead with innovative solutions for remote education and collaboration. Empower yourself with tools for engaging online learning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learn__box_item">
+                        <img src="img/Group 43.png" alt="" class="learn__item_img">
+                        <div class="learning__item_block">
+                            <p class="learning__item_headline txt_white">
+                                Transformative and Adaptive Learning Technology for the Future
+                            </p>
+                            <p class="learning__text txt_white">Discover how advanced technology can transform your education. Embrace future learning with adaptable tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <p class="footer__headline">
+                    English for Web- <br> developers
+                </p>
+                <p class="footer_under_headline">
+                    Subscribe to get our Newsletter
+                </p>
+                <div class="foter__box">
+                    <input class="footer__inp" type="text" placeholder="Your Email">
+                    <input class="footer__but" type="button" value="Subscribe">
+                </div>
+                <div class="footer__box2">
+                    <div class="footer__item">Careers</div>
+                    <div class="footer__item">Privacy Policy</div>
+                    <div style="border: 0;" class="footer__item">Terms & Conditions</div>
+                </div>
+                <p class="footer__text">© 2021 Class Technologies Inc. </p>
+            </div>
+        </footer>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
