@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+    <title>Traveloo</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__box1">
+            <img src="img/dove1.png" alt="">
+            <p>Traveloo</p>
+        </div>
+        <div class="nav__box2">
+            <div class="nav__item selected">
+                <img  src="img/Vector.png" alt="">
+                <p>Home</p>
+                
+            </div>
+            <div class="nav__item">
+                <img class="change2" src="img/wallet-2.png" alt="">
+                <p>Booking</p>
+                <div class="circle3"></div>
+            </div>
+            <div class="nav__item">
+                <img class="change4" src="img/global-search.png" alt="">
+                <p>Explore</p>
+            </div>
+            <div class="nav__item">
+                <img class="change5" src="img/message.png" alt="">
+                <p>Message</p>
+            </div>
+            <div class="nav__item">
+                <img class="change6" src="img/message-question.png" alt="">
+                <p>Support</p>
+            </div>
+            <div class="nav__item">
+                <img class="change7" src="img/category-2.png" alt="">
+                <p>Setting</p>
+            </div>
+        </div>
+        <div class="nav__box3">
+            <div class="nav__box3_item">
+                <div class="backPart">
+                    <div class="darCirle"></div>
+                </div>
+                <p>Dark mode</p>
+            </div>
+            <div class="nav__box3_item2">
+                <img class="change8" src="img/logout.png" alt="">
+                <p>Logout</p>
+            </div>
+        </div>
+    </nav>
+    <div class="box">
+        <header>
+            <div class="haeder__container1">
+                <div>
+                    <p class="header__headline">Hello Serh!</p>
+                    <p class="header__text">Welcome back and explore new trips</p>
+                </div>
+                <div class="search__box">
+                    <img class="change9" src="img/search-normal.png" alt="">
+                    <input class="search" type="text" placeholder="Festival Yuki Matsuri is coming...">
+                </div>
+                <div class="header__box">
+                    <div class="header__img2">
+                        <img class="change10" src="img/notification-bing.png" alt="">
+                        <div class="dot"></div>
+                    </div>
+                    <img src="img/Ellipse 2.png" alt="" class="header__img">
+                </div>
+            </div>
+            <div class="header__container2">
+                <div class="header__container2__item france">France</div>
+                <div class="header__container2__item vietnam">Vietnam</div>
+                <div class="header__container2__item ukraine">Ukraine</div>
+                <div class="header__container2__item japan">Japan</div>
+                <div class="header__container2__item all">ALL</div>
+            </div>
+            <div class="sort">
+                <p class="sort__text">Sort by:</p>
+                <div class="sort__container">
+                    <p class="sortPopularity">popularity</p>
+                    <p class="sortRating">rating</p>
+                    <p class="sortPrice">price</p>
+                </div>
+                <div class="sort__box">
+                    <div class="sort__item sort__default">
+                        <img src="img/Group 13.png" alt="">
+                    </div>
+                    <div class="sort__item sort__middle">
+                        <img src="img/Group 14.png" alt="">
+                    </div>
+                    <div class="sort__item sort__min">
+                        <img src="img/Group 15.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main__item" data-city="nha trang" data-popularity="1488" data-price="900" data-rating="4.5" data-country="vietnam">
+                <div class="main__img">
+                    <img src="img/Group 289211.png" alt="">
+                </div>
+                <div class="main__textbox">
+                <div class="main__headline">Nha Trang (Vietnam)</div>
+                <div class="main__headline">$ 900 <span class="lineThrough">(1050)</span></div>
+                <div class="main__text">Nha Trang has many famous tourist attractions and is a big tourist center of the country...</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >4.5</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(1,488)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="paris" data-popularity="666" data-price="1200" data-rating="4.2" data-country="france">
+                <div class="main__img"><img src="img/image 3.png" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Paris (France)</div>
+                <div class="main__headline">$ 1200 </div>
+                <div class="main__text">
+                    Paris has many famous tourist attractions and is a major tourism hub of the country...</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >4.2</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(666)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="lviv" data-popularity="398" data-price="600" data-rating="3.9" data-country="ukraine">
+                <div class="main__img"><img src="img/Без назви 1.png" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Lviv (Ukraine)</div>
+                <div class="main__headline">$ 600 <span class="lineThrough">(1200)</span></div>
+                <div class="main__text">Lviv has many famous tourist attractions and is a major tourism center of the country...</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >3.9</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(398)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="bangkok" data-popularity="997" data-price="1500" data-rating="4.3" data-country="thailand">
+                <div class="main__img"><img src="img/Group 289211(1).png" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Bangkok (Thailand)</div>
+                <div class="main__headline">$ 1500 </div>
+                <div class="main__text">Bangkok has many famous tourist attractions and is a major tourism hub of the country....</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >4.3</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(997)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="kyoto" data-popularity="1432" data-price="1000" data-rating="4.7" data-country="japan">
+                <div class="main__img"><img src="img/kyoto.jpg" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Kyoto (Japan)</div>
+                <div class="main__headline">$ 1000 <span class="lineThrough">(1400)</span></div>
+                <div class="main__text">Kyoto has many famous tourist attractions and is a cultural and tourism center of the country....</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >4.7</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(1,432)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="provance" data-popularity="728" data-price="900" data-rating="4" data-country="france">
+                <div class="main__img"><img src="img/provance.jpg" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Provance (France)</div>
+                <div class="main__headline">$ 900 <span class="lineThrough">(1100)</span></div>
+                <div class="main__text">Provence has many famous tourist attractions and tourism destination in the country....</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >4.0</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(728)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="tokyo" data-popularity="3361" data-price="1400" data-rating="5" data-country="japan">
+                <div class="main__img"><img src="img/tokyo.jfif" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Tokyo (japan)</div>
+                <div class="main__headline">$ 1400 <span class="lineThrough">(2000)</span></div>
+                <div class="main__text">Tokyo has many famous tourist attractions and is a major tourism hub of the country....</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >5.0</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(3,361)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item" data-city="krabi" data-popularity="1398" data-price="2000" data-rating="4.9" data-country="thailand">
+                <div class="main__img"><img src="img/Krabi-Thailand-1 1.png" alt=""></div>
+                <div class="main__textbox">
+                <div class="main__headline">Krabi (Thailand)</div>
+                <div class="main__headline">$ 2000 <span class="lineThrough">(2500)</span></div>
+                <div class="main__text">Krabi has many famous tourist attractions and popular tourism destination in the country....</div></div>
+                <div class="main__container">
+                    <div class="main__rating">
+                        <img src="img/Group.png" alt="">
+                        <p class="rate" >4.9</p>
+                    </div>
+                    <div class="main__people">
+                        <img class="change11" src="img/user-tick.png" alt="">
+                        <p>(1,398)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

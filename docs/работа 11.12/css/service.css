@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+font-family: 'Jost';
+text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black; 
+    font-family: 'Jost';
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_container_links{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav{
+    width: 40%;
+}
+.nav_links{
+    text-decoration: none;
+    color: black;
+}
+.nav_logo{
+    width: 10%;
+}
+header{
+  width: 100%;
+}
+header img{
+  width: 100%;
+}
+main{
+  width: 62.5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+
+.main_container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main_box{
+    border-radius: 20px;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.5s;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+  cursor: pointer;
+}
+.main_box:hover {
+    background-color: #ddd;
+  }
+  .main_link{
+    font-weight: bold;
+
+  }
+
+  .main_container_i{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background: #F4F0EC;
+    padding-bottom: 70px;
+  }
+  .main_text_i{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 16px;
+  }
+  .main_img_radius{
+   border-radius:0px 40px 0px 290px;
+   width: 350px;
+   height: 385px;
+  }
+  .main_box_i{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .main_mini_box{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  .mini_main_img_radius{
+    width: 100px;
+    height: 100px;
+  }
+  .main_h1_i{
+    text-align:start;
+    
+  }
+  .main_text_i1{
+    width: 50%;
+    text-align: center;
+    height: 100px;
+  }
+  .main_p_i{
+    text-align: justify;
+    font-size: 22px;
+  }
+  .white_h1{
+    color: white;
+    font-size: 120px;
+    font-family: "DM Serif Display";
+  }
+h1{
+    font-family: "DM Serif Display";
+}
+.main_button_container input{
+  cursor: pointer;
+}
+.main_text_i12{
+    font-size: 57px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .main_button_container{
+    margin-top: 190px;
+    width: 100%;
+    height: 400px;
+    border-radius:30px;
+    background: #292F36;
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  .main_button_text{
+    font-size: 50px;
+    color: white;
+   text-align: center;
+  }
+  input{
+    width: 230px;
+    height: 60px;
+    border-radius: 10px;
+    background: #CDA274;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+  }
+  .main_button_text1{
+    color: white;
+   text-align: center;
+  }
+  footer{
+    width: 62.5%;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 190px;
+}
+.footerinf{
+    width: 27%;
+    height: 190px;
+}
+.footermid{
+    width: 15%;
+    height: 370px;
+}
+.footercontact{
+    width: 23%;
+    height: 270px;
+}
+.footerinf img{
+    margin-bottom: 10px;
+}
+.footerinf_container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    margin-top: 20px;
+}
+.footerinf_container img{
+    width: 17px;
+    height: 20px;
+    cursor: pointer;
+}
+.footerheadline{
+    font-size: 25px;
+    font-family: "DM Serif Display";
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.footeritem{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 300%;
+    cursor: pointer;
+}
+.footerinf p{
+    font-size: 18px;
+}
+.footertxt{
+    font-size: 23px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    height: 80px;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(170, 169, 169);
+}

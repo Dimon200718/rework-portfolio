@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="score__time">
+            <h1 class="score">0</h1>
+            <h1 class="time">time: 0</h1>
+        </div>
+        <div class="playfield" id="playfield1" onclick="miss()">
+            <div class="result_bar">
+                <p>your score is: <br> <p class="result_numb"></p></p> 
+                <br> <p class="record"></p>
+                <div class="try_button" onclick="restart()">Try Again</div>
+            </div>
+            <div class="game_menu">
+                <h1>Hello it's aim game by Dexileees, pick your difficulty:</h1>
+                <div class="button" onclick="easy()">easy</div>
+                <div class="button" onclick="medium()">medium</div>
+                <div class="button" onclick="hard()">hard</div>
+            </div>
+            <div class="target_big" onclick="hit1(event)">
+                <div class="score_screen"></div>
+                <div class="target_mid" onclick="hit2(event)">
+                    <div class="target_small" onclick="hit3(event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
